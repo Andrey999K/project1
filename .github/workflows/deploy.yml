@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - dev  # Запускать при пушах в ветку dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Укажите нужную версию Node.js
+
+      - name: Install dependencies
+        run: npm install  # Установите зависимости вашего проекта
+
+      - name: Build project
+        run: npm run build  # Сборка проекта
+
+      - name: Deploy to GitHub Pages
+        uses: actions-gh-pages@v3  # Используйте действие для развертывания на GitHub Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Укажите директорию с собранным проектом
