@@ -3,6 +3,7 @@ import { mockData, otherParams } from "./mockData.js";
 import { TableEmpty } from "../../components/TableEmpty.jsx";
 import { InputNumber } from "../../components/InputNumber.jsx";
 import { TableWithoutTitles } from "../../components/TableWIthoutTitles.jsx";
+import { EngineeringAssistanceTable } from "../../components/EngineeringAssistanceTable.jsx";
 
 export const Inventory = () => {
   const columns = [
@@ -125,6 +126,7 @@ export const Inventory = () => {
           />
         </div>
       </div>
+      <EngineeringAssistanceTable />
     </div>
   );
 };

@@ -57,3 +57,24 @@ export const otherParams = [
     value: 13600,
   },
 ]
+
+export const engineeringAssistanceMockData = [
+  {
+    id: 1,
+    name: "Расходные материалы",
+    count: 1,
+    cost: 5000
+  },
+  {
+    id: 2,
+    name: "Осветитель (Смена 10 часов) (переработки 1500р/час",
+    count: 2.5,
+    cost: 9000
+  },
+  {
+    id: 3,
+    name: "Инженер-техник/логгер (Смена 12 часов) (переработки 1500р/час)",
+    count: 2.5,
+    cost: 15000
+  }
+]

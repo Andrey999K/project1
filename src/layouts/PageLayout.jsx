@@ -28,7 +28,7 @@ export const PageLayout = () => {
           ))}
         </div>
       </div>
-      <div className="mt-5 w-full max-w-screen-lg m-auto">
+      <div className="mt-5 w-full max-w-screen-lg m-auto pb-40">
         <Outlet />
       </div>
     </div>
