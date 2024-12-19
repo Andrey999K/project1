@@ -34,3 +34,26 @@ export const mockData = {
     ],
   },
 };
+
+export const otherParams = [
+  {
+    name: "Стоимость аренды",
+    value: 8500,
+  },
+  {
+    name: "Количество смен",
+    value: 2,
+  },
+  {
+    name: "Общая стоимость аренды",
+    value: 17000,
+  },
+  {
+    name: "Скидка (%)",
+    value: 20,
+  },
+  {
+    name: "Итого по аренде оборудования",
+    value: 13600,
+  },
+]

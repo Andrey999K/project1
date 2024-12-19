@@ -15,6 +15,12 @@ export const InputNumber = ({ defaultValue, onChange, placeholder }) => {
     }
   };
 
+  useEffect(() => {
+    if (onChange) {
+      onChange(value);
+    }
+  }, [value]);
+
   return (
     <Input
       value={value}
